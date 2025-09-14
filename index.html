@@ -57,8 +57,8 @@
       <p2>About Me</p2>
     </div>
     <div class="parent-content">
-      <div class="about-content">
-        <div class="about-box">
+      <div class="experience-content">
+        <div class="experience-box">
           <div class="box">
             <h3>Experience</h3>
             <p>2 + years</p>
@@ -97,7 +97,7 @@
       <div class="experience-content">
         <div class="experience-box">
           <div class="box">
-            <h3>Frontend Development</h3>
+            <h3>Frontend</h3>
             <p>HTML, CSS, JavaScript, React</p>
             <p>Version Control & Collaboration</p>
           </div>
@@ -122,48 +122,43 @@
       <p2>Projects</p2>
     </div>
 
-    <div class="project-parent-content">
+    <div class="parent-content">
       <div class="project-content">
         <div class="project-box">
-          <div class="box" style="grid-area: 1 / 2 / 2 / 3;">
+          <div class="box" >
             <img src="Asset/secureguard.png" alt="secureguard"
-              style="width: 100%; height: 100%; border-radius: 40px 40px 0 0; cursor: pointer; "
               onclick="location.href='https://secureguard-eight.vercel.app/'">
             <h3 style="margin-top: 30px;">Secure Guard</h3>
             <p>Security Auditing Dashboard</p>
           </div>
-          <div class="box" style="grid-area: 1 / 3 / 2 / 4;">
+          <div class="box">
             <img src="Asset/pentraq.png" alt="Pentraq"
-              style="width: 100%; height: 100%; border-radius: 37px 37px 0 0; cursor: pointer; "
               onclick="location.href='https://pentraq.vercel.app/'">
             <h3 style="margin-top: 30px;">Pentraq</h3>
             <p>Web Auditing platform</p>
           </div>
-          <div class="box" style="grid-area: 1 / 4 / 2 / 5;">
+          <div class="box">
             <img src="Asset/contractor.png" alt="Contractor"
-              style="width: 100%; height: 100%; border-radius: 40px 40px 0 0; cursor: pointer; "
               onclick="location.href='https://contractor-vert.vercel.app/'">
             <h3 style="margin-top: 30px;">Contractor</h3>
             <p>Website For Contractors</p>
           </div>
-          <div class="box" style="grid-area: 2 / 2 / 3 / 3;">
+        </div>
+        <div class="project-box">
+          <div class="box" >
             <img src="Asset/vincars.png" alt="Vincars"
-              style="width: 100%; height: 100%; border-radius: 39px 39px 0 0; cursor: pointer; "
               onclick="location.href='https://vincars.vercel.app/'">
             <h3 style="margin-top: 30px;">Vincars</h3>
             <p>Vintage Car Marketplace</p>
           </div>
-          <div class="box" style="grid-area: 2 / 3 / 3 / 4;">
+          <div class="box" >
             <img src="Asset/plantdash.png" alt="Plant Dashboard"
-              style="width: 100%; height: 100%; border-radius: 40px 40px 0 0; cursor: pointer; "
               onclick="location.href='https://plant-dash-iota.vercel.app/'">
             <h3 style="margin-top: 30px;">Plant Dashboard</h3>
             <p>Dashboard For Plant</p>
           </div>
-          <div class="box" style="grid-area: 2 / 4 / 3 / 5;">
-
+          <div class="box" >
             <img src="Asset/oddsshift.png" alt="oddsshift"
-              style="width: 100%; height: 100%; border-radius: 37px 37px 0 0; cursor: pointer; "
               onclick="location.href='https://oddsshift.vercel.app/'">
             <h3 style="margin-top: 30px;">Oddshift</h3>
             <p>Bet Converter</p>
@@ -173,7 +168,35 @@
 
     </div>
   </section>
-  <section id="Contact"></section>§§§
+  <section id="Contact">
+    <div class="aboutme">
+      <p1></p1>
+      <p2>Contact Me</p2>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <label class="form-label" for="name" style=" font-family: 'Google Sans Code', monospace;
+    color: rgb(56, 51, 51);">Name</label>
+        <input class="form-input" type="text" id="name" name="name" required>
+        <label class="form-label" for="email" style=" font-family: 'Google Sans Code', monospace;
+    color: rgb(56, 51, 51);">Email</label>
+        <input class="form-input" type="email" id="email" name="email" required>
+
+      </div>
+
+
+
+      <div class="forms-group" style="margin-bottom: 10px;">
+        <label class="form-label" for="message" style=" font-family: 'Google Sans Code', monospace;
+    color: rgb(56, 51, 51);">Message</label>
+        <textarea class="form-input" id="message" name="message" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="form-button" style=" font-family: 'Google Sans Code', monospace;
+    color: rgb(56, 51, 51);">Send Message</button>
+      <div class="form-status" id="formStatus"></div>
+    </form>
+  </section>
 </body>
 
 </html>
